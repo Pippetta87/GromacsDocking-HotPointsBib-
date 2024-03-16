@@ -1,0 +1,26 @@
+\documentclass[main.tex]{subfiles}
+
+\begin{document}
+
+\newrefcontext[sorting=hot]
+%\printbibliography[filter={terrestrialplanets},keyword={primary},heading=bibintoc,title={\textcolor{beaver}{Biblio about: ''Sistema solare: pianeti terrestri''}}]
+%\printbibliography[filter={terrestrialplanets},notkeyword={primary},heading=bibintoc,title={\textcolor{beaver}{Other refs about: ''Sistema solare: pianeti terrestri''}}]
+
+{\let\clearpage\relax
+\chapter{Stars formation: fragmentation toward hydrostatic equilibrium}
+}
+
+\begin{refsection}[starformation.bib]
+\begingroup
+\nocite{*}
+\let\clearpage\relax
+%\settoggle{bbx:note}{false}
+%\AtNextBibliography{\AtEveryBibitem{\clearlist{note}}}
+\boolfalse{isreasearch}
+\printbibliography[filter={pps},heading=bibintoc,title={\textcolor{antiquefuchsia}{Vincoli a formazione planetaria da modelli/osservazioni formazione sistema solare}}]
+\booltrue{isreasearch}
+\printbibliography[filter={pps},check=bibsearchdef,heading=bibintoc,title={\textcolor{antiquefuchsia}{Bib research}}]
+\endgroup
+\end{refsection}
+
+\end{document}
